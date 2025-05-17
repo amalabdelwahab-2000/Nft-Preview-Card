@@ -1,0 +1,129 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+    background-color: #0D1A2D;
+}
+
+.container {
+ padding-left: 15px;
+ padding-right: 15px;
+ margin-left: auto;
+ margin-right: auto;
+}
+@media (min-width: 768px){
+  .container {
+    width: 750px;
+  }  
+}
+@media (min-width: 992px){
+  .container {
+    width: 970px;
+  }  
+}
+@media (min-width: 1200px){
+  .container {
+    width: 1170px;
+  }  
+}
+@font-face {
+  font-family: 'FontAwesome' ;
+  src: url(../webfonts/fa-solid-900.ttf) format('woff2'),
+  url(../webfonts/fa-solid-900.ttf) format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+/* end Global Rules */
+
+.Preview-Card  {
+  display: flex;
+       height: 100vh;
+       align-items: center;
+  
+} 
+.Preview-Card  .container {
+  padding-right: 10px;
+    padding-left: 10px;
+    background-color: #15273F;
+    width: 250px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 17px -6px #0c1729;
+    margin: 50% auto;
+
+}
+.Preview-Card  .container .iamge {
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px;
+}
+.Preview-Card  .container .iamge img {
+
+  width: 220px;
+    border-radius: 10px;
+}
+.Preview-Card  .container  .text h2 {
+  margin-bottom: -10px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: normal;
+}
+.Preview-Card  .container  .text  p {
+  color: #758BA9;
+  font-size: 14px;
+  width: 32ch;
+}
+.Preview-Card  .container .active {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.Preview-Card  .container .active .text-icon1,
+.Preview-Card  .container .active .text-icon2 {
+  display: flex;
+  align-items: center;
+}
+.Preview-Card  .container .active img {
+margin-right: 5px;
+}
+.Preview-Card  .container .active .text-icon1 span {
+  color: #00FFF8;
+}
+.Preview-Card  .container .active .text-icon2 span {
+  color: #8BACD9;
+  
+}
+.Preview-Card  .container .active::after {
+  content: '';
+    background-color: #2F4159;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 200%;
+}
+.Preview-Card  .container .avater  {
+  position: relative;
+  display: flex;
+  top: 40px;
+
+}
+.Preview-Card  .container .avater img {
+  width: 35px;
+  height: 35px;
+}
+.Preview-Card  .container .avater span {
+color: #8BACD9 !important;
+} 
+.Preview-Card  .container .avater p {
+  color: #ffffff;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
